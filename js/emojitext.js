@@ -11,6 +11,7 @@ function convert(){
       'O': 'capital O',
       'P': 'capital P',
       '-': 'dash',
+      '"': 'double quotation mark',
       '8': 'eight',
       '=': 'equals sign',
       '!': 'exclamation mark',
@@ -30,9 +31,11 @@ function convert(){
       ']': 'right bracket',
       ')': 'right parenthesis',
       ';': 'semicolon',
+      '\'': 'single quotation mark',
       '3': 'three',
       '~': 'tilda',
       '_': 'underscore',
+      '|': 'vertical bar',
     };
 
     var input = document.getElementById('input').value.replace(
