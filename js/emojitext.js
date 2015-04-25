@@ -52,12 +52,3 @@ function convert(){
 }
 
 document.getElementById('input').oninput = convert;
-
-window.onkeydown = function(e){
-    var key = e.keyCode || e.which;
-
-    // Enter: convert.
-    if(key === 13){
-        convert();
-    }
-};
