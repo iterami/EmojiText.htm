@@ -1,5 +1,10 @@
 function convert(){
-    var emojis = {
+    var characters = {
+      '&': 'and',
+      '@': 'at',
+      '*': 'asterisk',
+      '\\': 'backslash',
+      '^': 'caret',
       ':': 'colon',
       ',': 'comma',
       'D': 'capital D',
@@ -7,37 +12,43 @@ function convert(){
       'P': 'capital P',
       '-': 'dash',
       '8': 'eight',
+      '=': 'equals sign',
       '!': 'exclamation mark',
+      '/': 'forward slash',
+      '`': 'grave accent',
+      '>': 'greater than',
       '{': 'left brace',
       '[': 'left bracket',
       '(': 'left parenthesis',
+      '<': 'less than',
+      '#': 'number sign',
+      '%': 'percent sign',
       '.': 'period',
+      '+': 'plus sign',
       '?': 'question mark',
       '}': 'right brace',
       ']': 'right bracket',
       ')': 'right parenthesis',
       ';': 'semicolon',
       '3': 'three',
+      '~': 'tilda',
       '_': 'underscore',
     };
 
-    var error;
     var input = document.getElementById('input').value.replace(
       / /g, ''
     );
     var output = '';
 
-    for(var emoji in input){
-        if(emojis[input[emoji]] == undefined){
-            error = 'Unrecognized emoji!';
-            break;
+    for(var character in input){
+        if(characters[input[character]] == undefined){
+            continue;
         }
 
-        output += emojis[input[emoji]] + ' ';
+        output += characters[input[character]] + ' ';
     }
 
-    output = error || output.trim();
-    document.getElementById('output').value = output;
+    document.getElementById('output').value = output.trim();
 }
 
 window.onkeydown = function(e){
