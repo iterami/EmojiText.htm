@@ -51,6 +51,8 @@ function convert(){
     document.getElementById('output').value = output.trim();
 }
 
+document.getElementById('input').oninput = convert;
+
 window.onkeydown = function(e){
     var key = e.keyCode || e.which;
 
