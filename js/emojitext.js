@@ -1,3 +1,5 @@
+'use strict';
+
 function convert(){
     var characters = {
       '&': 'and',
