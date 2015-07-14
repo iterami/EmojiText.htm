@@ -46,7 +46,7 @@ function convert(){
     var output = '';
 
     for(var character in input){
-        if(characters[input[character]] == undefined){
+        if(characters[input[character]] == void(0)){
             continue;
         }
 
