@@ -56,4 +56,6 @@ function convert(){
     document.getElementById('output').value = output.trim();
 }
 
-document.getElementById('input').oninput = convert;
+window.onload = function(e){
+    document.getElementById('input').oninput = convert;
+};
