@@ -56,6 +56,6 @@ function convert(){
     document.getElementById('output').value = output.trim();
 }
 
-window.onload = function(e){
+function repo_init(){
     document.getElementById('input').oninput = convert;
-};
+}
