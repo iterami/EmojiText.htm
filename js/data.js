@@ -41,7 +41,8 @@ function convert(){
     };
 
     var input = document.getElementById('input').value.replace(
-      / /g, ''
+      / /g,
+      ''
     );
     var output = '';
 
