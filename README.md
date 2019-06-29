@@ -1,6 +1,6 @@
 iterami/EmojiText.htm
 ---------------------
 
-* Contributing: https://github.com/iterami/Docs.htm/blob/gh-pages/CONTRIBUTING.md
+* Contributing: https://iterami.com/Docs.htm/standards/contributing.htm
 * Requires:
   * [iterami/common](https://github.com/iterami/common)
