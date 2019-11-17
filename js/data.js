@@ -47,7 +47,7 @@ function convert(){
     let output = '';
 
     for(let character in input){
-        if(characters[input[character]] == void 0){
+        if(characters[input[character]] === void 0){
             continue;
         }
 
