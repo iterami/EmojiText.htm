@@ -1,7 +1,7 @@
 'use strict';
 
 function convert(){
-    let characters = {
+    const characters = {
       '&': 'and',
       '@': 'at',
       '*': 'asterisk',
@@ -40,13 +40,13 @@ function convert(){
       '|': 'vertical bar',
     };
 
-    let input = document.getElementById('input').value.replace(
+    const input = document.getElementById('input').value.replace(
       / /g,
       ''
     );
     let output = '';
 
-    for(let character in input){
+    for(const character in input){
         if(characters[input[character]] === void 0){
             continue;
         }
